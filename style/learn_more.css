@@ -34,15 +34,15 @@
 
 #Researchers
 {
-	background-image:url("images/for_researchers.png");
+	background-image:url("../images/for_researchers.png");
 }
 #PtCg
 {
-	background-image:url("images/for_ptcg.png");
+	background-image:url("../images/for_ptcg.png");
 }
 #Clinicians
 {
-	background-image:url("images/for_clinicians.png");
+	background-image:url("../images/for_clinicians.png");
 }
 
 @media (max-width: 490px)
