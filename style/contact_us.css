@@ -1,5 +1,52 @@
 @charset "utf-8";
 
+h3
+{
+	font: "Lucida Grande";
+}
+input
+{
+	font: "Lucida Grande";
+	border-radius:5px;
+	padding: 5pt;
+	margin-bottom: 10px;
+	box-shadow: none;
+	border: 1px solid #dbdbdb;
+	text-align: left;
+}
+
+button
+	{
+		background-color: #404040;
+		color:white;
+		border: none;
+		border-radius: 10px;
+		width: 150px;
+		height: 40px;
+		margin-top:10px;
+		font-size: 12pt;
+		cursor: pointer;
+	}
+button:hover
+{
+	background-color: #E57200;
+	transition-duration: 300ms;
+}
+.textBox
+{
+	width:200px;
+}
+textarea
+{
+	font: "Lucida Grande";
+	border-radius:5px;
+	padding: 5pt;
+	margin-bottom: 10px;
+	box-shadow: none;
+	border: 1px solid #dbdbdb;
+	width: 200px;
+}
+
 .Copy
 {
 	display:inline-block;

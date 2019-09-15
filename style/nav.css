@@ -59,6 +59,7 @@ p
 	{
 		color:#E57200;
 		cursor:pointer;
+		transition-duration:300ms;
 	}
 
 @media (max-width: 490px){

@@ -1,0 +1,61 @@
+<head>
+<link href="style/nav.css" rel="stylesheet" type="text/css">
+</head>
+<style>
+input
+{
+	font: "Lucida Grande";
+	border-radius:5px;
+	padding: 5pt;
+	margin-bottom: 10px;
+	box-shadow: none;
+	border: 1px solid #dbdbdb;
+	text-align: left;
+}
+
+button
+	{
+		background-color: #404040;
+		color:white;
+		border: none;
+		border-radius: 10px;
+		width: 150px;
+		height: 40px;
+		margin-top:10px;
+		font-size: 12pt;
+		cursor: pointer;
+	}
+button:hover
+{
+	background-color: #E57200;
+	transition-duration: 300ms;
+}
+.textBox
+{
+	width:200px;
+}
+textarea
+{
+	font: "Lucida Grande";
+	border-radius:5px;
+	padding: 5pt;
+	margin-bottom: 10px;
+	box-shadow: none;
+	border: 1px solid #dbdbdb;
+	width: 200px;
+}
+</style>
+
+<form name ="ContactFrom" action="https://formspree.io/yam3nv@virginia.edu" method="POST">
+    <h4> Name </h4>
+    <input class = "textBox" name="Name" type="name" placeholder="John Doe" required><br>
+    <h4>E-mail</h4>
+    <input class = "textBox" name="E-mail" type="email" placeholder="your@email.com" required><br>
+    <h4>Message</h4>
+    <textarea name="Message" placeholder="Your message here..." rows="7" required>
+    </textarea><br>
+    <h4>May we contact you?</h4>
+    <input type = "radio" name = "Can we contact you?" value="Yes" required> Yes <br>
+    <input type = "radio"name = "Can we contact you?" value="No" required> No <br>
+    <button type="submit"> Submit </button>
+</form>

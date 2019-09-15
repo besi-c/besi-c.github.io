@@ -1,17 +1,22 @@
 @charset "utf-8";
 
 button
-	{
-		background-color: #404040;
-		color:white;
-		border: none;
-		border-radius: 20px;
-		width: 15vw;
-		height:4vw;
-		margin-top:20px;
-		font-size: 1.5vw;
-		cursor: pointer;
-	}
+{
+	background-color: #404040;
+	color:white;
+	border: none;
+	border-radius: 20px;
+	width: 15vw;
+	height:4vw;
+	margin-top:20px;
+	font-size: 1.5vw;
+	cursor: pointer;
+}
+button:hover
+{
+	background-color: #E57200;
+	transition-duration: 300ms;
+}
 .Content p 
 {
 	text-align: justify;
