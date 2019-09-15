@@ -1,0 +1,186 @@
+@charset "utf-8";
+
+.Person .Headshot
+{
+	border-radius:50%;
+	max-width: 100px;	
+	border-width:1px;
+	border-color:black;
+	border-style:solid;
+}
+p
+{
+	text-align: justify;
+}
+
+ul
+{
+	list-style-type: none;
+	padding-left:0;
+}
+
+
+
+@media (min-width:300px) and (max-width: 1140px)
+{
+	.Image
+	{
+		text-align: center;
+	}
+	.Image img
+	{
+		width:50%;
+		height:auto;
+		border-radius:40px;
+	}
+	.Headshot img
+	{
+		width:200px;
+		border-radius:20px;
+	}
+	.Content
+	{
+		font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Verdana", "sans-serif";
+		margin-right:10px;
+		margin-left:10px;
+	}
+	.Person
+	{
+		height:3em;
+		padding-top:3vw;
+		padding-bottom:3vw;
+	}
+	.Person .Headshot
+	{
+		width:15%;
+		height:auto;
+		float: left;
+	}
+	.Headshot img
+	{
+		padding-top:100%;
+		overflow: hidden;
+	}
+	.Person .Info 
+	{
+		float:right;
+		padding-top:5px;
+		width:80%;
+	}
+
+	.Person .Info h5
+	{
+		font-size:12pt;
+		margin-bottom: 5px;
+	}
+
+	.Person .Info p
+	{
+		font-size: 2.5vw;
+	}
+	.Person:active,.Person:hover
+	{
+		background:#f5f5f5;
+	}
+	p
+	{
+		font-size:3vw;
+	}
+	li
+	{
+		margin-bottom: 8px;
+	}
+
+}
+
+
+
+@media (min-width:1145px)
+{
+	h2
+	{
+		font-size:24pt;
+	}
+	.Content
+	{
+		font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Verdana", "sans-serif";
+		margin-right:10px;
+		margin-left:10px;
+		width:80%;
+		margin:auto;
+	}
+	.Person
+	{
+		height:6em;
+		padding-top:5px;
+		display:block;
+		margin-bottom: 10px;
+	}
+	.Person .Headshot
+	{
+		width:80px;
+		height:auto;
+		float: left;
+	}
+	.Person .Info 
+	{
+		float: left;
+		margin-left:10px;
+		padding-top:10px;
+	}
+	
+	#JLach .Info
+	{
+		margin-top:-10px;	
+	}
+	
+	h3
+	{
+		font-size:18pt;
+	}
+
+	.Person .Info h5
+	{
+		font-size:15pt;
+		margin-bottom: 5px;
+	}
+
+	.Person .Info p
+	{
+		font-size: 1vw;
+	}
+	.Person:hover
+	{
+		background:#f5f5f5;
+	}
+	p
+	{
+		font-size:1vw;
+	}
+/*
+	.Person img
+	{
+		width:500px;
+		float:right;
+		border-radius:60px;
+	}
+*/
+	.Copy
+	{
+		float:left;
+		width:65%;
+	}
+	.Image
+	{
+		float:right;
+		width:33%;
+	}
+	.Image img
+	{
+		width:100%;
+		height:auto;
+		border-radius:60px;
+	}
+	
+}
+

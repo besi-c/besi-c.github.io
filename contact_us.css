@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+.Copy
+{
+	display:inline-block;
+}
+.Copy div
+{
+	display: inline;
+}
+
+@media (min-width:300px) and (max-width: 1140px)
+{
+	
+	.Content
+	{
+		font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Verdana", "sans-serif";
+		margin-right:10px;
+		margin-left:10px;
+	}
+	
+	#desktop
+	{
+		display:none;
+	}
+	
+
+}
+
+@media (min-width:1145px)
+{
+	#mobile
+	{
+		display: none;
+	}
+	h2
+	{
+		font-size:24pt;
+	}
+	.Content
+	{
+		font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Verdana", "sans-serif";
+		margin-right:10px;
+		margin-left:10px;
+		width:80%;
+		margin:auto;
+	}
+	
+	h3
+	{
+		font-size:18pt;
+	}
+
+	p
+	{
+		font-size:1vw;
+	}
+	
+	
+}
+

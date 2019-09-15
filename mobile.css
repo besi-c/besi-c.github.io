@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+@media (max-width: 490px){
+	.Logo img
+	{
+		width: 250px;
+	}
+		img
+	{
+		margin-bottom: 10px;
+	}
+		.Header {
+		text-align:center;
+	}
+	.Navigation {
+		padding: 5;
+		text-align: center;
+	}
+	.Navigation a
+	{
+		padding-right:5px;
+		font-size:10pt;
+	}
+
+	.Content {
+		padding-left:10px;
+		padding-right:10px;
+		text-align: center;
+	}
+	
+	
+	button
+	{
+		background-color: #404040;
+		color:white;
+		border: none;
+		border-radius: 20px;
+		width: 200px;
+		height:50px;
+		margin-top:20px;
+		font-size:12pt;
+	}
+	.Logo
+	{
+		float: none;
+	}
+	nav
+	{
+		float:none;
+	}
+}
