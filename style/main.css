@@ -91,6 +91,10 @@ button:hover
 		float:right;
 		width:40%;
 	}
+	.image img
+	{
+		padding-left:10%;
+	}
 	
 }
 
