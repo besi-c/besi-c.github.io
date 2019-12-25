@@ -174,10 +174,11 @@ ul
 	{
 		float:right;
 		width:33%;
+		text-align: center;
 	}
 	.Image img
 	{
-		width:100%;
+		width:80%;
 		height:auto;
 		border-radius:60px;
 	}

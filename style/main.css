@@ -40,6 +40,11 @@ button:hover
 		padding-right:10px;
 		text-align: center;
 	}
+
+	.copy p
+	{
+		padding-bottom: 10px;
+	}
 	
 	button
 	{
@@ -78,13 +83,28 @@ button:hover
 		margin:auto;
 	}
 	
-	.copy
+	/* Old Home */
+	/* .copy
 	{
 		float:left;
 		width:60%;
 		font-size: 1.5vw;
 		padding-top: 3vw;
 		text-align: center;
+	} */
+
+	/* New Home */
+	.copy
+	{
+		float:left;
+		width:60%;
+		font-size: 14pt;
+		padding-top: 3vw;
+		text-align: center;
+	}
+	.copy p
+	{
+		padding-bottom: 10px;
 	}
 	.image
 	{
