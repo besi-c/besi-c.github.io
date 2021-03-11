@@ -1,46 +1,62 @@
-<!DOCTYPE html><html lang='en-US'>
+<!DOCTYPE html><html lang="en-US">
 	<head>
-		<title>Contact US</title>
+		<title>Contact Us | BESI-C</title>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0"/>
+		<meta name="viewport" content="width=device-width; initial-scale=1.0;">
+		<link rel="icon" href="/images/favicon.png">
+		<link rel="stylesheet" type="text/css" href="/style/main.css">
 
-		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Aldrich" />
-		<link href="style/nav.css" rel="stylesheet" type="text/css">
-		<link href="style/contact_us.css" rel="stylesheet" type="text/css">
-
+		<script src="https://kit.fontawesome.com/e54c1740d9.js" crossorigin="anonymous"></script>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-155032258-1"></script>
+		<!--script async src="https://www.googletagmanager.com/gtag/js?id=UA-155032258-1"></script>
 		<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
 
-		gtag('config', 'UA-155032258-1');
-		</script>
+			gtag('config', 'UA-155032258-1');
+		</script-->
+
+		
 	</head>
 	<body>
-		<div class="Header">
-			<div class="Logo">
-				<img src="images/logo.png" width="250" alt="Logo"/> 
-			</div>
-			<nav class="Navigation">
-				<a href="index.html">Home</a>
-				<a href="about_us.html">About Us</a>
-				<a href="contact_us.html">Contact</a>
-				<a href="news.html">News</a>
-				<a href="learn_more.html">Learn More</a>
+		<div id="navbar">
+			<a href="/">
+				<img src="/images/logo.png" alt="Logo"/>
+			</a>
+			<nav id="nav-links">
+				<a href="/">Home</a>
+				<a href="/about_us">About Us</a>
+				<a href="/contact_us">Contact</a>
+				<a href="/news">News</a>
+				<a href="/learn_more">Learn More</a>
 			</nav>
 		</div>
+		
+		<div id="content">
+			
+	<h2>Contact Us</h2>
+	<p>Thank you for your interest in BESI-C.  We welcome your questions and feedback. You may contact us by e-mailing <a href="mailto:info@besic.org?subject=BESI-C Inquiry">info@besic.org</a>, or by filling the form bellow, and a member of our team will be in touch.</p>
 
-		<br>
+	<form name="ContactFrom" action="https://formspree.io/yam3nv@virginia.edu" method="POST">
+		<label for="Name">Name</label>
+		<input name="Name" type="text" placeholder="John Doe" required>
 
-		<div class="Content">
-			<div class="Copy" style="display: inline-block;">
-				<h2>Contact Us</h2>
-				<div>Thank you for your interest in BESI-C.  We welcome your questions and feedback. You may contact us by e-mailing <a href="mailto:info@besic.org?subject=BESI-C Inquiry"><u><i>info@besic.org</i></u></a>, or by filling the form bellow, and a member of our team will be in touch.</div>
-			</div>
-			<br> <br>
-			<iframe src="form.html" style="border:none;height:430px;overflow:hidden;"></iframe>
+		<label for="E-mail">E-mail</label>
+		<input name="E-mail" type="text" placeholder="your@email.com" required>
+
+		<label for="Message">Message</label>
+		<textarea name="Message" placeholder="Your message here..." rows="7" required>
+		</textarea>
+
+		<label>May we contact you?</label>
+		<input type="radio" name="Can we contact you?" value="Yes" required>Yes
+		<input type="radio" name="Can we contact you?" value="No" required>No
+
+		<button type="submit" class="button">Submit</button>
+	</form>
+
+
 		</div>
 	</body>
 </html>

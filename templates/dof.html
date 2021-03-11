@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+{% block title %}Findings | BESI-C{% endblock %}
+
+{% block head %}
+	<script>
+		function Accordion(id) {
+			var elem = document.getElementById(id);
+			var head = document.getElementById(id + "_header");
+			if (elem.style.display == "inline") {
+				//console.log("some");
+				elem.style.display = "none";
+				head.innerHTML = head.innerHTML.replace("fas fa-angle-down","fas fa-angle-right")
+			} else {
+				//console.log("none");
+				elem.style.display = "inline";
+				head.innerHTML = head.innerHTML.replace("fas fa-angle-right", "fas fa-angle-down")
+			}
+		}
+	</script>
+{% endblock %}
+
+{% block content %}
+	<!--img src="/images/learn_more/dof.jpg" alt="Image_Title" class="page-img"/-->
+
+	<h2>Dissemination of Findings</h2>
+
+	<div class="collapse-header" id="publications_header" onclick="Accordion('publications')">
+		<i class="fas fa-angle-right"></i>
+		Publications
+	</div>
+	<div class="collapse" id="publications">
+		<a href="https://www.researchprotocols.org/2019/12/e16178"><h5>Leveraging Smart Health Technology to Empower Patients and Family Caregivers in Managing Cancer Pain: Protocol for a Feasibility Study <i class="fas fa-link"></i></h5></a>
+		<p>LeBaron V, Hayes J, Gordon K, Alam R, Homdee N, Martinez Y, Ogunjirin E, Thomas T, Jones R, Blackhall L, Lach J. Leveraging Smart Health Technology to Empower Patients and Family Caregivers in Managing Cancer Pain: Protocol for a Feasibility Study.  JMIR Res Protoc 2019;8(12):e16178. DOI: 10.2196/16178. PMID: 31815679</p>
+
+		<a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8877908&isnumber=8877893"><h5>Agitation Monitoring and Prevention System for Dementia Caregiver Empowerment <i class="fas fa-link"></i></h5></a>
+		<p>N. Homdee, R. Alam, J.A. Hayes, T. Hamid, J. Park, S. Wolfe, H. Goins, N. Fyffe, T. Newbold, T. Smith-Jackson, A. Bankole, M.S. Anderson, J. Lach, "Agitation Monitoring and Prevention System for Dementia Caregiver Empowerment," in Computer, vol. 52, no. 11, pp. 30-39, Nov. 2019doi: 10.1109/MC.2019.2933192</p>
+
+
+		<a href="https://formative.jmir.org/2020/8/e20836/"><h5>Understanding the Experience of Cancer Pain From the Perspective of Patients and Family Caregivers to Inform Design of an In-Home Smart Health System: Multimethod Approach<i class="fas fa-link"></i></h5></a>
+		<p>LeBaron, V., Bennett, R., Blackhall, L., Alam, R., Gordon, K., Hayes, J., Homdee, N., Martinez, Y, Ogunjirin, E., Jones, R., Thomas, T. &amp; Lach, J. (2020). Understanding the experience of cancer pain management at home from the perspective of patients and family caregivers to inform design of an in-home smart health sensing system. JMIR (Journal of Medical Internet Research) Formative Research, 4(8):e20836. PMID: 32712581</p>
+	</div>
+
+
+	<div class="collapse-header"  id="presentations_header" onclick="Accordion('presentations')">
+		<i class="fas fa-angle-right"></i>
+		Scientific Presentations
+	</div>
+	<div class="collapse" id="presentations">
+		<p>Note: *podium; #poster; ^e-poster discussion </p>
+
+		<a href="https://higherlogicdownload.s3.amazonaws.com/AANNET/12ebde25-5178-43b2-a724-5f650d708880/UploadedImages/2019_On-Site_Program_CANS_FINAL1.pdf"><h5>Creating a Sensor System to Improve Cancer Pain Management <i class="fas fa-link"></i></h5></a>
+		<p>*LeBaron, V., Blackhall, L., Jones, R., Gordon, K., Alam, R., Hayes, J., Nutta, H., &amp; Lach, J. Creating a Sensor System to Improve Cancer Pain Management. Council to Advance Nursing Science (CANS) Advanced Methods Conference; Washington, D.C. (October 2019).
+
+		<a href="https://www.morressier.com/article/exploring-feasibility-acceptability-homebased-smart-health-sensing-system-improve-cancer-pain-management-patients-caregivers/5cdbe0a9618793e647b126ee"><h5>Exploring the feasibility and acceptability of a home-based, smart health sensing system to improve cancer pain management for patients and caregivers <i class="fas fa-link"></i></h5></a>
+		<p>^LeBaron, V., Blackhall, L., Jones, R., Alam, R., Gordon, K., Hayes, J., Nutta, H., &amp; Lach, J. Exploring the feasibility and acceptability of a home-based, smart health sensing system to improve cancer pain management for patients and caregivers. Multinational Association of Supportive Care in Cancer/MASCC Annual Meeting; San Francisco, CA (June 2019).</p>
+
+		<h5>BESI-C: Behavioral and Environmental Sensing and Intervention for Cancer</h5>
+		<p>#^Hayes, J., LeBaron, V., Alam, R., Homdee, N., Gordon, K. &amp; Lach J. BESI-C: Behavioral and Environmental Sensing and Intervention for Cancer. IEEE International Conference on Biomedical and Health Informatics (BHI'19); Chicago, IL (May 2019).</p>
+
+		<h5>The Best of Both Worlds:  How Clinical Nurse Leader (CNL) Students Can Support  Engineering and Nursing Research Collaborations</h5>
+		<p>#McCole, K &amp; LeBaron, V.  The Best of Both Worlds:  How Clinical Nurse Leader (CNL) Students Can Support  Engineering and Nursing Research Collaborations. Clinical Nurse Leader Summit, Tampa, FL. (February 2019).</p>
+
+		<a href="https://engineering.virginia.edu/events/2018-connections-smart-health-workshop"><h5>Leveraging wireless sensing to empower patients and family caregivers in the safe and effective management of cancer pain <i class="fas fa-link"></i></h5></a>
+		<p>*LeBaron, V. &amp; Lach, J.  (2018).  Leveraging wireless sensing to empower patients and family caregivers in the safe and effective management of cancer pain.  National Science Foundation (NSF) Connections in Smart Health Workshop; Arlington, VA (September 2018).</p>
+
+		<a href="https://www.ninr.nih.gov/sites/files/docs/2018-NINR-Precision-Health-symposium-abstracts-508c.pdf"><h5>Leveraging mHealth and wireless sensing to empower patients and family caregivers in the safe and effective management of cancer pain <i class="fas fa-link"></i></h5></a>
+		<p>#LeBaron, V., Blackhall, L., Lach, J.  Leveraging mHealth and wireless sensing to empower patients and family caregivers in the safe and effective management of cancer pain. Nursing Researchers (NINR) 2018 boot camp Precision Health: Smart Technologies, Smart Health; Bethesda, MD (July 2018).</p>
+	</div>
+{% endblock %}

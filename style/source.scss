@@ -1,0 +1,228 @@
+@import url('https://rsms.me/inter/inter.css');
+@import url('https://fonts.googleapis.com/css?family=Aldrich');
+
+$black:black;
+$light-grey:#f5f5f5;
+$dark-grey:#404040;
+$white:white;
+$blue:#141E3C;
+$orange:#E57200;
+
+// Prevent Firefox selected button/link outline
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
+// Prevent iOS input styling
+input.text, input[type='text'], input[type='button'], input[type='submit'], .input-checkbox { -webkit-appearance:none; border-radius:0; }
+
+body {
+	margin:0;
+	padding:0;
+
+	font-family:'Inter', sans-serif;
+	font-size:1.2rem;
+
+	background:$white;
+	color:$black;
+}
+a { color:inherit; text-decoration:none; }
+img { max-width:100%; }
+#navbar {
+	display:block;
+	background:$blue;
+	color:$white;
+	height:6rem;
+	font-family:'Aldrich';
+
+	img {
+		height:5rem;
+		margin-left:2rem;
+	}
+
+	#nav-links {
+		float:right;
+		padding:1.5rem 1.2rem;
+		a {
+			display:inline-block;
+			padding:0.5rem 0.6rem 0.5rem;
+			font-size:1.8rem;
+			line-height:2rem;
+		}
+	}
+}
+
+#content {
+	width:80%;
+	padding:2rem 10%;
+
+	img.page-img {
+		float:right;
+		margin:1rem;
+		width:30%;
+		border-radius: 1rem;
+	}
+
+	h1, h2 {
+		margin-top:2rem;
+		margin-bottom:0rem;
+	}
+	h3, h4, h5, h6 {
+		margin-top:2rem;
+		margin-bottom:-1rem;
+	}
+	h1 { font-size:2.8rem; }
+	h2 { font-size:2.4rem; }
+	h3 { font-size:2rem; }
+	h4 { font-size:1.6rem; }
+	h5 { font-size:1.4rem; }
+	h6 { font-size:inherit; }
+
+	p a {
+		text-decoration:underline;
+	}
+
+	.button {
+		position:relative;
+		text-align:center;
+		display:block;
+		width:12rem;
+		margin:2rem auto;
+		padding:1.2rem 2rem;
+		border:none;
+		border-radius:1rem;
+		outline:none;
+		font-size:1.4rem;
+		background:$dark-grey;
+		color:$white;
+
+		&:hover {
+			background:$orange;
+		}
+	}
+
+	.person {
+		display:block;
+		height:6rem;
+		width:40rem;
+		max-width:90%;
+		margin:1rem 0;
+
+		img {
+			position:relative;
+			float:left;
+			margin:0.4rem 1rem;
+			width:5rem;
+			border-radius:2.5rem;
+			border:1px solid $black;
+		}
+		h5 {
+			padding:0.4rem 0 0;
+		}
+	}
+	a div.article-link {
+		display:block;
+		max-width:40rem;
+		margin:1rem 0;
+		padding:1rem 0.6rem;
+
+		h1, h2, h3, h4, h5, h6, p {
+			margin:0rem;
+		}
+		h5::after {
+			content:' <i class="fas fa-link"></i>';
+		}
+	}
+	a div.article-link:hover {
+		background:$light-grey;
+		border-radius:1rem;
+	}
+	a div.person:hover {
+		background:$light-grey;
+		border-radius:1.5rem;
+	}
+
+	form {
+		position:relative;
+		display:block;
+		width:40rem;
+		max-width:100%;
+		margin:2rem auto;
+
+		label {
+			display:block;
+			margin-top:1rem;
+			padding:0 5%;
+			font-weight:bold;
+			text-align:left;
+		}
+		input[type=text], textarea {
+			width:90%;
+			padding:0.4rem;
+			margin:0 calc(5% - 0.4rem);
+			border:1px solid $black;
+			border-radius:0.4rem;
+		}
+		input[type=radio] {
+			text-align:left;
+			margin-left:5%;
+		}
+	}
+
+	.info-panel {
+		position:absolute;;
+		display:inline-block;
+		top:8rem;
+		width:30vw;
+		max-height:12vw;
+		margin-left:4vw;
+		bottom:2rem;
+		padding:15vw 0;
+		border-radius:1rem;
+		text-align:center;
+		color:$white;
+
+		background-position:center;
+		background-repeat:no-repeat;
+		background-size:fill;
+		background-clip:padding-box;
+
+		&:hover {
+			opacity:0.9;
+			background-color:black;
+		}
+
+		p {
+			font-size:1.6rem;
+			margin-top:2rem;
+		}
+	}
+	#for-researchers {
+		left:-2vw;
+		background-image:url('/images/learn_more/for_researchers.jpg');
+	}
+	#for-patients {
+		left:31vw;
+		background-image:url('/images/learn_more/for_patients.jpg');
+	}
+	#for-clinicians {
+		right:2vw;
+		background-image:url('/images/learn_more/for_clinicians.jpg');
+	}
+
+	.collapse-header {
+		display:block;
+		height:2.4rem;
+		padding:0.3rem 0.4rem;
+		margin:2rem 0 -1rem;
+		border-bottom:1px solid $black;
+		font-size:1.8rem;
+		font-weight:bold;
+
+		i {
+			display:inline-block;
+			width:1.2rem;
+		}
+	}
+	.collapse {
+		display:none;
+	}
+}

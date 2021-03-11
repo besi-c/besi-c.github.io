@@ -1,0 +1,12 @@
+pages = [
+	{ src = "index.html", target = "index.html" },
+	{ src = "about.html", target = "about_us.html" },
+	{ src = "contact.html", target = "contact_us.html" },
+	{ src = "news.html", target = "news.html" },
+	{ src = "learn.html", target = "learn_more.html" },
+	{ src = "dof.html", target = "learn_more/dof.html" },
+]
+
+sass = [
+	{ src = "source.scss", target = "main.css" },
+]

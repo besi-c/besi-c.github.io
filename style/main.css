@@ -1,124 +1,183 @@
-@charset "utf-8";
+@import url("https://rsms.me/inter/inter.css");
+@import url("https://fonts.googleapis.com/css?family=Aldrich");
+:focus {
+  outline: none; }
 
-button
-{
-	background-color: #404040;
-	color:white;
-	border: none;
-	border-radius: 20px;
-	width: 15vw;
-	height:4vw;
-	margin-top:20px;
-	font-size: 1.5vw;
-	cursor: pointer;
-}
-button:hover
-{
-	background-color: #E57200;
-	transition-duration: 300ms;
-}
-.Content p 
-{
-	text-align: justify;
-}
-.Content {
-	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Verdana", "sans-serif";
-		padding-left:10px;
-		padding-right:10px;
-		text-align: center;
-	}
+::-moz-focus-inner {
+  border: 0; }
 
-@media (max-width: 490px){
-		img
-	{
-		margin-bottom: 10px;
-	}
-	
+input.text, input[type='text'], input[type='button'], input[type='submit'], .input-checkbox {
+  -webkit-appearance: none;
+  border-radius: 0; }
 
-	.Content {
-		padding-left:10px;
-		padding-right:10px;
-		text-align: center;
-	}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2rem;
+  background: white;
+  color: black; }
 
-	.copy p
-	{
-		padding-bottom: 10px;
-	}
-	
-	button
-	{
-		background-color: #404040;
-		color:white;
-		border: none;
-		border-radius: 20px;
-		width: 200px;
-		height:50px;
-		margin-top:20px;
-		font-size:12pt;
-	}
-	.Logo
-	{
-		float: none;
-	}
-	nav
-	{
-		float:none;
-	}
-}
+a {
+  color: inherit;
+  text-decoration: none; }
 
+img {
+  max-width: 100%; }
 
-@media (min-width:1145px)
-{
-	
-	h2
-	{
-		font-size:35pt;
-	}
-	
-	.Content
-	{
-		width: 90%;
-		text-align: left;
-		margin:auto;
-	}
-	
-	/* Old Home */
-	/* .copy
-	{
-		float:left;
-		width:60%;
-		font-size: 1.5vw;
-		padding-top: 3vw;
-		text-align: center;
-	} */
+#navbar {
+  display: block;
+  background: #141E3C;
+  color: white;
+  height: 6rem;
+  font-family: 'Aldrich'; }
+  #navbar img {
+    height: 5rem;
+    margin-left: 2rem; }
+  #navbar #nav-links {
+    float: right;
+    padding: 1.5rem 1.2rem; }
+    #navbar #nav-links a {
+      display: inline-block;
+      padding: 0.5rem 0.6rem 0.5rem;
+      font-size: 1.8rem;
+      line-height: 2rem; }
 
-	/* New Home */
-	.copy
-	{
-		float:left;
-		width:60%;
-		font-size: 14pt;
-		padding-top: 3vw;
-		text-align: center;
-	}
-	.copy p
-	{
-		padding-bottom: 10px;
-	}
-	.image
-	{
-		float:right;
-		width:40%;
-	}
-	.image img
-	{
-		padding-left:10%;
-	}
-	
-}
-
-.image {
-}
-.copy {
-}
+#content {
+  width: 80%;
+  padding: 2rem 10%; }
+  #content img.page-img {
+    float: right;
+    margin: 1rem;
+    width: 30%;
+    border-radius: 1rem; }
+  #content h1, #content h2 {
+    margin-top: 2rem;
+    margin-bottom: 0rem; }
+  #content h3, #content h4, #content h5, #content h6 {
+    margin-top: 2rem;
+    margin-bottom: -1rem; }
+  #content h1 {
+    font-size: 2.8rem; }
+  #content h2 {
+    font-size: 2.4rem; }
+  #content h3 {
+    font-size: 2rem; }
+  #content h4 {
+    font-size: 1.6rem; }
+  #content h5 {
+    font-size: 1.4rem; }
+  #content h6 {
+    font-size: inherit; }
+  #content p a {
+    text-decoration: underline; }
+  #content .button {
+    position: relative;
+    text-align: center;
+    display: block;
+    width: 12rem;
+    margin: 2rem auto;
+    padding: 1.2rem 2rem;
+    border: none;
+    border-radius: 1rem;
+    outline: none;
+    font-size: 1.4rem;
+    background: #404040;
+    color: white; }
+    #content .button:hover {
+      background: #E57200; }
+  #content .person {
+    display: block;
+    height: 6rem;
+    width: 40rem;
+    max-width: 90%;
+    margin: 1rem 0; }
+    #content .person img {
+      position: relative;
+      float: left;
+      margin: 0.4rem 1rem;
+      width: 5rem;
+      border-radius: 2.5rem;
+      border: 1px solid black; }
+    #content .person h5 {
+      padding: 0.4rem 0 0; }
+  #content a div.article-link {
+    display: block;
+    max-width: 40rem;
+    margin: 1rem 0;
+    padding: 1rem 0.6rem; }
+    #content a div.article-link h1, #content a div.article-link h2, #content a div.article-link h3, #content a div.article-link h4, #content a div.article-link h5, #content a div.article-link h6, #content a div.article-link p {
+      margin: 0rem; }
+    #content a div.article-link h5::after {
+      content: ' <i class="fas fa-link"></i>'; }
+  #content a div.article-link:hover {
+    background: #f5f5f5;
+    border-radius: 1rem; }
+  #content a div.person:hover {
+    background: #f5f5f5;
+    border-radius: 1.5rem; }
+  #content form {
+    position: relative;
+    display: block;
+    width: 40rem;
+    max-width: 100%;
+    margin: 2rem auto; }
+    #content form label {
+      display: block;
+      margin-top: 1rem;
+      padding: 0 5%;
+      font-weight: bold;
+      text-align: left; }
+    #content form input[type=text], #content form textarea {
+      width: 90%;
+      padding: 0.4rem;
+      margin: 0 calc(5% - 0.4rem);
+      border: 1px solid black;
+      border-radius: 0.4rem; }
+    #content form input[type=radio] {
+      text-align: left;
+      margin-left: 5%; }
+  #content .info-panel {
+    position: absolute;
+    display: inline-block;
+    top: 8rem;
+    width: 30vw;
+    max-height: 12vw;
+    margin-left: 4vw;
+    bottom: 2rem;
+    padding: 15vw 0;
+    border-radius: 1rem;
+    text-align: center;
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: fill;
+    background-clip: padding-box; }
+    #content .info-panel:hover {
+      opacity: 0.9;
+      background-color: black; }
+    #content .info-panel p {
+      font-size: 1.6rem;
+      margin-top: 2rem; }
+  #content #for-researchers {
+    left: -2vw;
+    background-image: url("/images/learn_more/for_researchers.jpg"); }
+  #content #for-patients {
+    left: 31vw;
+    background-image: url("/images/learn_more/for_patients.jpg"); }
+  #content #for-clinicians {
+    right: 2vw;
+    background-image: url("/images/learn_more/for_clinicians.jpg"); }
+  #content .collapse-header {
+    display: block;
+    height: 2.4rem;
+    padding: 0.3rem 0.4rem;
+    margin: 2rem 0 -1rem;
+    border-bottom: 1px solid black;
+    font-size: 1.8rem;
+    font-weight: bold; }
+    #content .collapse-header i {
+      display: inline-block;
+      width: 1.2rem; }
+  #content .collapse {
+    display: none; }
