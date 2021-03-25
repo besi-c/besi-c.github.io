@@ -19,48 +19,28 @@ body {
 	padding:0;
 
 	font-family:'Inter', sans-serif;
-	font-size:1.2rem;
 
 	background:$white;
 	color:$black;
 }
 a { color:inherit; text-decoration:none; }
 img { max-width:100%; }
+
 #navbar {
 	display:block;
 	background:$blue;
 	color:$white;
-	height:6rem;
 	font-family:'Aldrich';
 
-	img {
-		height:5rem;
-		margin-left:2rem;
-	}
-
 	#nav-links {
-		float:right;
-		padding:1.5rem 1.2rem;
 		a {
 			display:inline-block;
-			padding:0.5rem 0.6rem 0.5rem;
-			font-size:1.8rem;
 			line-height:2rem;
 		}
 	}
 }
 
 #content {
-	width:80%;
-	padding:2rem 10%;
-
-	img.page-img {
-		float:right;
-		margin:1rem;
-		width:30%;
-		border-radius: 1rem;
-	}
-
 	h1, h2 {
 		margin-top:2rem;
 		margin-bottom:0rem;
@@ -78,6 +58,10 @@ img { max-width:100%; }
 
 	p a {
 		text-decoration:underline;
+	}
+
+	img.page-img {
+		border-radius: 1rem;
 	}
 
 	.button {
@@ -127,9 +111,9 @@ img { max-width:100%; }
 		h1, h2, h3, h4, h5, h6, p {
 			margin:0rem;
 		}
-		h5::after {
-			content:' <i class="fas fa-link"></i>';
-		}
+		//h5::after {
+			//content:' <i class="fas fa-link"></i>';
+		//}
 	}
 	a div.article-link:hover {
 		background:$light-grey;
@@ -168,14 +152,6 @@ img { max-width:100%; }
 	}
 
 	.info-panel {
-		position:absolute;;
-		display:inline-block;
-		top:8rem;
-		width:30vw;
-		max-height:12vw;
-		margin-left:4vw;
-		bottom:2rem;
-		padding:15vw 0;
 		border-radius:1rem;
 		text-align:center;
 		color:$white;
@@ -196,15 +172,12 @@ img { max-width:100%; }
 		}
 	}
 	#for-researchers {
-		left:-2vw;
 		background-image:url('/images/learn_more/for_researchers.jpg');
 	}
 	#for-patients {
-		left:31vw;
 		background-image:url('/images/learn_more/for_patients.jpg');
 	}
 	#for-clinicians {
-		right:2vw;
 		background-image:url('/images/learn_more/for_clinicians.jpg');
 	}
 
@@ -224,5 +197,123 @@ img { max-width:100%; }
 	}
 	.collapse {
 		display:none;
+	}
+}
+
+/* Height >= Width : Mobile */
+@media (max-aspect-ratio: 1/1), (aspect-ratio: 1/1) {
+	#navbar {
+		height:6.5rem;
+		text-align:center;
+
+		img {
+			height:3.4rem;
+		}
+
+		#nav-links {
+			display:block;
+			padding:0.5rem 1rem;
+			font-size:1rem;
+			a {
+				padding:0.2rem 0.2rem 0.2rem;
+			}
+		}
+	}
+
+	#content {
+		width:90%;
+		padding:2rem 5%;
+		font-size:1rem;
+
+		img.page-img {
+			float:center;
+			margin:0 10%;
+			width:80%;
+			border-radius: 1rem;
+		}
+
+		.info-panel {
+			display:block;
+			width:100%;
+			height:14rem;
+			margin:0 0 1.8rem;
+			padding:2rem 0;
+			background-position:50% 30%;
+		}
+		#for-researchers {
+			left:-2vw;
+		}
+		#for-patients {
+			left:31vw;
+		}
+		#for-clinicians {
+			right:2vw;
+		}
+
+		.m-center {
+			text-align:center;
+		}
+		.m-hide {
+			display:none;
+		}
+	}
+}
+/* Height < Width : Desktop */
+@media (min-aspect-ratio: 1/1) {
+	#navbar {
+		height:6rem;
+
+		img {
+			height:5rem;
+			margin-left:2rem;
+		}
+
+		#nav-links {
+			float:right;
+			padding:1.5rem 1.2rem;
+			font-size:1.8rem;
+			a {
+				padding:0.5rem 0.6rem 0.5rem;
+			}
+		}
+	}
+
+	#content {
+		width:80%;
+		padding:2rem 10%;
+		font-size:1.2rem;
+
+		img.page-img {
+			position:relative;
+			float:right;
+			top:-1rem;
+			margin:1rem;
+			width:30%;
+		}
+
+		.info-panel {
+			position:absolute;
+			display:inline-block;
+			top:8rem;
+			width:30vw;
+			max-height:12vw;
+			margin-left:4vw;
+			bottom:2rem;
+			padding:15vw 0;
+		}
+		#for-researchers {
+			left:-2vw;
+		}
+		#for-patients {
+			left:31vw;
+		}
+		#for-clinicians {
+			right:2vw;
+		}
+
+
+		.m-show {
+			display:none;
+		}
 	}
 }
