@@ -34,8 +34,7 @@ img {
     line-height: 2rem; }
 
 #content h1, #content h2 {
-  margin-top: 2rem;
-  margin-bottom: 0rem; }
+  margin-bottom: 0; }
 
 #content h3, #content h4, #content h5, #content h6 {
   margin-top: 2rem;
@@ -191,6 +190,8 @@ img {
     width: 90%;
     padding: 2rem 5%;
     font-size: 1rem; }
+    #content h1, #content h2 {
+      margin-top: 0; }
     #content img.page-img {
       float: center;
       margin: 0 10%;
@@ -231,6 +232,8 @@ img {
     width: 80%;
     padding: 2rem 10%;
     font-size: 1.2rem; }
+    #content h1, #content h2 {
+      margin-top: 2rem; }
     #content img.page-img {
       position: relative;
       float: right;
