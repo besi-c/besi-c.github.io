@@ -24,14 +24,20 @@ a {
 img {
   max-width: 100%; }
 
+.u-center {
+  text-align: center; }
+
 #navbar {
   display: block;
+  top: -1rem;
   background: #141E3C;
   color: white;
   font-family: 'Aldrich'; }
   #navbar #nav-links a {
     display: inline-block;
     line-height: 2rem; }
+    #navbar #nav-links a:hover {
+      color: #E57200; }
 
 #content h1, #content h2 {
   margin-bottom: 0; }
@@ -96,15 +102,25 @@ img {
   #content .person h5 {
     padding: 0.4rem 0 0; }
 
-#content a div.article-link {
-  display: block;
-  max-width: 40rem;
-  margin: 1rem 0;
-  padding: 1rem 0.6rem; }
-  #content a div.article-link h1, #content a div.article-link h2, #content a div.article-link h3, #content a div.article-link h4, #content a div.article-link h5, #content a div.article-link h6, #content a div.article-link p {
-    margin: 0rem; }
+#content .article-grid {
+  display: grid;
+  margin-bottom: 1.4rem; }
 
-#content a div.article-link:hover {
+#content .article-link {
+  width: calc(90% - 2rem);
+  margin: 1rem 5% 0;
+  padding: 1rem 1rem;
+  font-size: 1.2rem; }
+  #content .article-link p {
+    margin: 0; }
+  #content .article-link h1, #content .article-link h2, #content .article-link h3, #content .article-link h4, #content .article-link h5, #content .article-link h6, #content .article-link p {
+    margin: 0rem; }
+  #content .article-link img {
+    width: 99%;
+    margin: 0.2rem 0 0.4rem;
+    border-radius: 1rem; }
+
+#content .article-link:hover {
   background: #f5f5f5;
   border-radius: 1rem; }
 
@@ -176,7 +192,7 @@ img {
 /* Height >= Width : Mobile */
 @media (max-aspect-ratio: 1/1), (aspect-ratio: 1/1) {
   #navbar {
-    height: 6.5rem;
+    height: 7rem;
     text-align: center; }
     #navbar img {
       height: 3.4rem; }
@@ -197,6 +213,8 @@ img {
       margin: 0 10%;
       width: 80%;
       border-radius: 1rem; }
+    #content .article-grid {
+      grid-template-columns: 100%; }
     #content .info-panel {
       display: block;
       width: 100%;
@@ -218,13 +236,14 @@ img {
 /* Height < Width : Desktop */
 @media (min-aspect-ratio: 1/1) {
   #navbar {
-    height: 6rem; }
+    height: 6.5rem; }
     #navbar img {
       height: 5rem;
-      margin-left: 2rem; }
+      margin-left: 2rem;
+      margin-top: 0.5rem; }
     #navbar #nav-links {
       float: right;
-      padding: 1.5rem 1.2rem;
+      padding: 1.6rem 1.2rem;
       font-size: 1.8rem; }
       #navbar #nav-links a {
         padding: 0.5rem 0.6rem 0.5rem; }
@@ -240,6 +259,8 @@ img {
       top: -1rem;
       margin: 1rem;
       width: 30%; }
+    #content .article-grid {
+      grid-template-columns: 50% 50%; }
     #content .info-panel {
       position: absolute;
       display: inline-block;

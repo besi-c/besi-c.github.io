@@ -1,5 +1,4 @@
-@import url('https://rsms.me/inter/inter.css');
-@import url('https://fonts.googleapis.com/css?family=Aldrich');
+@import url('https://rsms.me/inter/inter.css');@import url('https://fonts.googleapis.com/css?family=Aldrich');
 
 $black:black;
 $light-grey:#f5f5f5;
@@ -29,8 +28,13 @@ a {
 }
 img { max-width:100% }
 
+.u-center {
+	text-align:center;
+}
+
 #navbar {
 	display:block;
+	top:-1rem;
 	background:$blue;
 	color:$white;
 	font-family:'Aldrich';
@@ -39,6 +43,10 @@ img { max-width:100% }
 		a {
 			display:inline-block;
 			line-height:2rem;
+
+			&:hover {
+				color:$orange;
+			}
 		}
 	}
 }
@@ -93,20 +101,31 @@ img { max-width:100% }
 		}
 		h5 { padding:0.4rem 0 0 }
 	}
-	a div.article-link {
-		display:block;
-		max-width:40rem;
-		margin:1rem 0;
-		padding:1rem 0.6rem;
 
+	.article-grid {
+		display:grid;
+		//grid-template-columns:50% 50%;
+		//grid-row-gap:0rem;
+		//grid-column-gap:0rem;
+		margin-bottom:1.4rem;
+	}
+	.article-link {
+		width:calc(90% - 2rem);
+		margin:1rem 5% 0;
+		padding:1rem 1rem;
+		font-size:1.2rem;
+
+		p { margin:0; }
 		h1, h2, h3, h4, h5, h6, p {
 			margin:0rem;
 		}
-		//h5::after {
-			//content:' <i class="fas fa-link"></i>';
-		//}
+		img {
+			width:99%;
+			margin:0.2rem 0 0.4rem;
+			border-radius:1rem;
+		}
 	}
-	a div.article-link:hover {
+	.article-link:hover {
 		background:$light-grey;
 		border-radius:1rem;
 	}
@@ -194,7 +213,7 @@ img { max-width:100% }
 /* Height >= Width : Mobile */
 @media (max-aspect-ratio: 1/1), (aspect-ratio: 1/1) {
 	#navbar {
-		height:6.5rem;
+		height:7rem;
 		text-align:center;
 
 		img { height:3.4rem }
@@ -221,6 +240,10 @@ img { max-width:100% }
 			margin:0 10%;
 			width:80%;
 			border-radius: 1rem;
+		}
+
+		.article-grid {
+			grid-template-columns:100%;
 		}
 
 		.info-panel {
@@ -252,16 +275,17 @@ img { max-width:100% }
 /* Height < Width : Desktop */
 @media (min-aspect-ratio: 1/1) {
 	#navbar {
-		height:6rem;
+		height:6.5rem;
 
 		img {
 			height:5rem;
 			margin-left:2rem;
+			margin-top:0.5rem;
 		}
 
 		#nav-links {
 			float:right;
-			padding:1.5rem 1.2rem;
+			padding:1.6rem 1.2rem;
 			font-size:1.8rem;
 			a {
 				padding:0.5rem 0.6rem 0.5rem;
@@ -284,6 +308,10 @@ img { max-width:100% }
 			width:30%;
 		}
 
+		.article-grid {
+			grid-template-columns:50% 50%;
+		}
+
 		.info-panel {
 			position:absolute;
 			display:inline-block;
@@ -303,7 +331,6 @@ img { max-width:100% }
 		#for-clinicians {
 			right:2vw;
 		}
-
 
 		.m-show { display:none }
 	}
