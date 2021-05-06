@@ -207,6 +207,10 @@ img { max-width:100% }
 	}
 	.collapse {
 		display:none;
+
+		h5:hover {
+			text-decoration:underline;
+		}
 	}
 }
 

@@ -188,6 +188,8 @@ img {
 
 #content .collapse {
   display: none; }
+  #content .collapse h5:hover {
+    text-decoration: underline; }
 
 /* Height >= Width : Mobile */
 @media (max-aspect-ratio: 1/1), (aspect-ratio: 1/1) {
