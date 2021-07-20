@@ -212,6 +212,14 @@ img { max-width:100% }
 			text-decoration:underline;
 		}
 	}
+
+	.graph {
+		display:block;
+		border:none;
+		width:90%;
+		height:40rem;
+		margin:auto;
+	}
 }
 
 /* Height >= Width : Mobile */

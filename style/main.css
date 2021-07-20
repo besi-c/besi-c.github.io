@@ -191,6 +191,13 @@ img {
   #content .collapse h5:hover {
     text-decoration: underline; }
 
+#content .graph {
+  display: block;
+  border: none;
+  width: 90%;
+  height: 40rem;
+  margin: auto; }
+
 /* Height >= Width : Mobile */
 @media (max-aspect-ratio: 1/1), (aspect-ratio: 1/1) {
   #navbar {
