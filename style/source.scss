@@ -217,17 +217,20 @@ img { max-width:100% }
 /* Height >= Width : Mobile */
 @media (max-aspect-ratio: 1/1), (aspect-ratio: 1/1) {
 	#navbar {
-		height:7rem;
 		text-align:center;
 
 		img { height:3.4rem }
 
 		#nav-links {
 			display:block;
-			padding:0.5rem 1rem;
+			padding:0.6rem 1rem;
 			font-size:1rem;
 			a {
-				padding:0.2rem 0.2rem 0.2rem;
+				padding:0 0.2rem;
+				margin:0;
+			}
+			.mobile-hide {
+				display:none;
 			}
 		}
 	}
@@ -279,7 +282,9 @@ img { max-width:100% }
 /* Height < Width : Desktop */
 @media (min-aspect-ratio: 1/1) {
 	#navbar {
-		height:6.5rem;
+		width:100%;
+		min-height:6.5rem;
+		display:inline-block;
 
 		img {
 			height:5rem;
@@ -288,11 +293,12 @@ img { max-width:100% }
 		}
 
 		#nav-links {
+			position:relative;
 			float:right;
 			padding:1.6rem 1.2rem;
 			font-size:1.8rem;
 			a {
-				padding:0.5rem 0.6rem 0.5rem;
+				padding:0.5rem 0.4rem 0.5rem;
 			}
 		}
 	}

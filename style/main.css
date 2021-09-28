@@ -194,16 +194,18 @@ img {
 /* Height >= Width : Mobile */
 @media (max-aspect-ratio: 1/1), (aspect-ratio: 1/1) {
   #navbar {
-    height: 7rem;
     text-align: center; }
     #navbar img {
       height: 3.4rem; }
     #navbar #nav-links {
       display: block;
-      padding: 0.5rem 1rem;
+      padding: 0.6rem 1rem;
       font-size: 1rem; }
       #navbar #nav-links a {
-        padding: 0.2rem 0.2rem 0.2rem; }
+        padding: 0 0.2rem;
+        margin: 0; }
+      #navbar #nav-links .mobile-hide {
+        display: none; }
   #content {
     width: 90%;
     padding: 2rem 5%;
@@ -238,17 +240,20 @@ img {
 /* Height < Width : Desktop */
 @media (min-aspect-ratio: 1/1) {
   #navbar {
-    height: 6.5rem; }
+    width: 100%;
+    min-height: 6.5rem;
+    display: inline-block; }
     #navbar img {
       height: 5rem;
       margin-left: 2rem;
       margin-top: 0.5rem; }
     #navbar #nav-links {
+      position: relative;
       float: right;
       padding: 1.6rem 1.2rem;
       font-size: 1.8rem; }
       #navbar #nav-links a {
-        padding: 0.5rem 0.6rem 0.5rem; }
+        padding: 0.5rem 0.4rem 0.5rem; }
   #content {
     width: 80%;
     padding: 2rem 10%;
