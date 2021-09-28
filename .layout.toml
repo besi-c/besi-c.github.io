@@ -5,6 +5,8 @@ pages = [
 	{ src = "news.html", target = "news.html" },
 	{ src = "learn.html", target = "learn_more.html" },
 	{ src = "dof.html", target = "learn_more/dof.html" },
+	{ src = "dyads.html", target = "learn_more/dyads.html" },
+	{ src = "clinicians.html", target = "learn_more/clinicians.html" },
 ]
 
 sass = [
