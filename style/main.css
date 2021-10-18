@@ -154,6 +154,7 @@ img {
   border-radius: 1rem;
   text-align: center;
   color: white;
+  padding: 2rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: fill;
@@ -191,6 +192,14 @@ img {
   #content .collapse h5:hover {
     text-decoration: underline; }
 
+#content .frame {
+  display: block;
+  margin: auto;
+  width: 60rem;
+  max-width: 100%; }
+  #content .frame iframe {
+    max-width: 100%; }
+
 /* Height >= Width : Mobile */
 @media (max-aspect-ratio: 1/1), (aspect-ratio: 1/1) {
   #navbar {
@@ -226,12 +235,6 @@ img {
       margin: 0 0 1.8rem;
       padding: 2rem 0;
       background-position: 50% 30%; }
-    #content #for-researchers {
-      left: -2vw; }
-    #content #for-patients {
-      left: 31vw; }
-    #content #for-clinicians {
-      right: 2vw; }
     #content .m-center {
       text-align: center; }
     #content .m-hide {
@@ -277,11 +280,11 @@ img {
       margin-left: 4vw;
       bottom: 2rem;
       padding: 15vw 0; }
-    #content #for-researchers {
-      left: -2vw; }
     #content #for-patients {
-      left: 31vw; }
+      left: -2vw; }
     #content #for-clinicians {
+      left: 31vw; }
+    #content #for-researchers {
       right: 2vw; }
     #content .m-show {
       display: none; } }
