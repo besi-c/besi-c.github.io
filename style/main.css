@@ -67,6 +67,15 @@ img {
 #content p a {
   text-decoration: underline; }
 
+#content a h3, #content a h4, #content a h5, #content a h6 {
+  text-decoration: underline; }
+
+#content hr {
+  width: 95%;
+  margin: 2rem 0;
+  border: 2px solid black;
+  border-radius: 2px; }
+
 #content img.page-img {
   border-radius: 1rem; }
 
