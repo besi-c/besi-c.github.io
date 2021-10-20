@@ -27,6 +27,9 @@ img {
 .u-center {
   text-align: center; }
 
+.u-nowrap {
+  white-space: nowrap; }
+
 #navbar {
   display: block;
   top: -1rem;
@@ -67,9 +70,6 @@ img {
 #content p a {
   text-decoration: underline; }
 
-#content a h3, #content a h4, #content a h5, #content a h6 {
-  text-decoration: underline; }
-
 #content hr {
   width: 95%;
   margin: 2rem 0;
@@ -97,7 +97,7 @@ img {
 
 #content .person {
   display: block;
-  height: 6rem;
+  min-height: 6rem;
   width: 40rem;
   max-width: 90%;
   margin: 1rem 0; }
@@ -110,6 +110,9 @@ img {
     border: 1px solid black; }
   #content .person h5 {
     padding: 0.4rem 0 0; }
+  #content .person p {
+    display: inline-block;
+    width: calc(100% - 8rem); }
 
 #content .article-grid {
   display: grid;
@@ -208,6 +211,9 @@ img {
   max-width: 100%; }
   #content .frame iframe {
     max-width: 100%; }
+
+#content .big-links a {
+  text-decoration: underline; }
 
 /* Height >= Width : Mobile */
 @media (max-aspect-ratio: 1/1), (aspect-ratio: 1/1) {

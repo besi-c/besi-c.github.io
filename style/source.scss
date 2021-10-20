@@ -31,6 +31,9 @@ img { max-width:100% }
 .u-center {
 	text-align:center;
 }
+.u-nowrap {
+	white-space: nowrap;
+}
 
 #navbar {
 	display:block;
@@ -64,7 +67,6 @@ img { max-width:100% }
 	h5 { font-size:1.4rem }
 	h6 { font-size:inherit }
 	p a { text-decoration:underline }
-	a h3, a h4, a h5, a h6 { text-decoration:underline }
 	hr {
 		width:95%;
 		margin:2rem 0;
@@ -93,7 +95,7 @@ img { max-width:100% }
 
 	.person {
 		display:block;
-		height:6rem;
+		min-height:6rem;
 		width:40rem;
 		max-width:90%;
 		margin:1rem 0;
@@ -107,6 +109,10 @@ img { max-width:100% }
 			border:1px solid $black;
 		}
 		h5 { padding:0.4rem 0 0 }
+		p {
+			display:inline-block;
+			width:calc(100% - 8rem);
+		}
 	}
 
 	.article-grid {
@@ -228,6 +234,10 @@ img { max-width:100% }
 		max-width:100%;
 
 		iframe { max-width: 100% }
+	}
+
+	.big-links {
+		a { text-decoration:underline }
 	}
 }
 
