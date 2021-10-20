@@ -22,21 +22,21 @@ If you would like files to be continually updated as source files change use:
 ## Run Development Server
 This will make the current version of the site available at [localhost:5000](http://localhost:5000).
 
-	export FLASK_APP=local.py
 	flask run
 
 
 ## Files
 - `images/` static image files used by site
+- `files/` static files used by site
 - `learn_more/*.html` generated site files, created with `build.py`
 - `style/`
 	- `source.scss` [sass](https://sass-lang.com) style source, used by `build.py`
 	- `main.css` generated style file, created with `build.py`
 - `templates/*.html` [jinja2](https://jinja.palletsprojects.com/en/3.0.x/templates) source templates for pages, used by `build.py`
 - `.layout.toml` file to define which templates are used to create pages
+- `app.py` python script to run local server
 - `build.py` python script to create site from templates
 - `CNAME` file for [github pages](https://pages.github.com) to set domain name
-- `local.py` python script to run local server
 - `README.md` this file
 - `requirements.txt` python requirements
 - `*.html` generated site files, created with `build.py`
