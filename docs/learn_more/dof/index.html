@@ -1,68 +1,60 @@
+
 <!DOCTYPE html><html lang="en-US">
-	<head>
-		<title>BESI-C</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width; initial-scale=1.0;">
-		<link rel="icon" href="/images/favicon.png">
-		<link rel="stylesheet" type="text/css" href="/style/general.css">
-		
+<head>
+	
+		<title>Findings | BESI-C</title>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0;">
+	<link rel="icon" href="/images/favicon.png">
+	<link rel="stylesheet" type="text/css" href="/style/general.css">
+	
 
-		<script src="https://kit.fontawesome.com/e54c1740d9.js" crossorigin="anonymous"></script>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-155032258-1"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-
-			gtag('config', 'UA-155032258-1');
-		</script>
-
-		
-	</head>
-	<body>
-		<div id="navbar">
-			<a href="/">
-				<img src="/images/logo.png" alt="Logo"/>
-			</a>
-			<nav id="nav-links">
-				<a href="/" class="mobile-hide">Home</a>
-				<a href="/about_us">About Us</a>
-				<a href="/contact_us">Contact</a>
-				<a href="/news">News</a>
-				<a href="/learn_more">Learn More</a>
-			</nav>
-		</div>
-		
-		<div id="content">
-			
-			
-			
-		</div>
-	</body>
-</html>
-
-Findings | BESI-C
-
-
+	<script src="https://kit.fontawesome.com/e54c1740d9.js" crossorigin="anonymous"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-155032258-1"></script>
 	<script>
-		function Accordion(id) {
-			var elem = document.getElementById(id);
-			var head = document.getElementById(id + "_header");
-			if (elem.style.display == "inline") {
-				//console.log("some");
-				elem.style.display = "none";
-				head.innerHTML = head.innerHTML.replace("fas fa-angle-down","fas fa-angle-right")
-			} else {
-				//console.log("none");
-				elem.style.display = "inline";
-				head.innerHTML = head.innerHTML.replace("fas fa-angle-right", "fas fa-angle-down")
-			}
-		}
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-155032258-1');
 	</script>
+</head>
 
 
+<script>
+	function Accordion(id) {
+		var elem = document.getElementById(id);
+		var head = document.getElementById(id + "_header");
+		if (elem.style.display == "inline") {
+			//console.log("some");
+			elem.style.display = "none";
+			head.innerHTML = head.innerHTML.replace("fas fa-angle-down","fas fa-angle-right")
+		} else {
+			//console.log("none");
+			elem.style.display = "inline";
+			head.innerHTML = head.innerHTML.replace("fas fa-angle-right", "fas fa-angle-down")
+		}
+	}
+</script>
 
+<body>
+<div id="navbar">
+	<a href="/">
+		<img src="/images/logo.png" alt="Logo"/>
+	</a>
+	<nav id="nav-links">
+		<a href="/" class="mobile-hide">Home</a>
+		<a href="/about_us">About Us</a>
+		<a href="/contact_us">Contact</a>
+		<a href="/news">News</a>
+		<a href="/learn_more">Learn More</a>
+	</nav>
+</div>
+
+
+<div id="content">
 	<h2>Dissemination of Findings</h2>
 
 	<div class="collapse-header" id="publications_header" onclick="Accordion('publications')">
@@ -116,4 +108,7 @@ Findings | BESI-C
 		<a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8877908&isnumber=8877893"><h5>Agitation Monitoring and Prevention System for Dementia Caregiver Empowerment</h5></a>
 		<p>N. Homdee, R. Alam, J.A. Hayes, T. Hamid, J. Park, S. Wolfe, H. Goins, N. Fyffe, T. Newbold, T. Smith-Jackson, A. Bankole, M.S. Anderson, J. Lach, "Agitation Monitoring and Prevention System for Dementia Caregiver Empowerment," in Computer, vol. 52, no. 11, pp. 30-39, Nov. 2019doi: 10.1109/MC.2019.2933192</p>
 	</div>
+</div>
 
+</body>
+</html>

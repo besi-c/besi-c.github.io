@@ -1,8 +1,15 @@
-{% include 'base' %}
-{% block title %}Contact Us | BESI-C{% endblock %}
+---
+title: Contact Us
+---
 
-{% block content %}
-	<h2 class="u-center">Contact Us</h2>
+<!DOCTYPE html><html lang="en-US">
+{% include 'head' %}
+
+<body>
+{% include 'navbar' %}
+
+<div id="content">
+	<h2 class="u-center">{{ title }}</h2>
 	<p class="u-center">Thank you for your interest in BESI-C.  We welcome your questions and feedback. <br>You may contact us by filling the form below, and a member of our team will be in touch.</p>
 
 	<form name="ContactFrom" action="https://formspree.io/f/xgeroqeq" method="POST">
@@ -22,5 +29,7 @@
 
 		<button type="submit" class="button">Submit</button>
 	</form>
+</div>
 
-{% endblock %}
+</body>
+</html>

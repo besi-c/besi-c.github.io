@@ -1,8 +1,15 @@
-{% include 'base' %}
-{% block title %}For Clinicians | BESI-C{% endblock %}
+---
+title: For Clinicians
+---
 
-{% block content %}
-	<h2>For Clinicians<h2>
+<!DOCTYPE html><html lang="en-US">
+{% include 'head' %}
+
+<body>
+{% include 'navbar' %}
+
+<div id="content">
+	<h2>{{ title }}</h2>
 
 	<h4>Questions or Concerns?</h4>
 	<p>Contact our Clinical Research Coordinator at <a href="tel:434-459-1628">(434) 459-1628</a></p>
@@ -51,4 +58,7 @@
 
 	<h4>Survey Links</h4>
 	<p><i>Coming Soon</i></p>
-{% endblock %}
+</div>
+
+</body>
+</html>

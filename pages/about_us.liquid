@@ -1,11 +1,18 @@
-{% include 'base' %}
-{% block title %}About Us | BESI-C{% endblock %}
+---
+title: About Us
+---
 
-{% block content %}
+<!DOCTYPE html><html lang="en-US">
+{% include 'head' %}
+
+<body>
+{% include 'navbar' %}
+
+<div id="content">
 	<img src="/images/about.jpg" alt="Team Photo" class="page-img m-hide"/>
 	<img src="/images/about_wide.jpg" alt="Team Photo for Mobile" class="page-img m-show"/>
 
-	<h2>About Us</h2>
+	<h2>{{ title }}</h2>
 	<p>BESI-C brings together the creative, problem-solving spirit of both engineering and nursing, and represents a truly interdisciplinary research endeavor supported by a dedicated team of faculty, students and collaborators.</p>
 
 
@@ -25,8 +32,8 @@
 
 	<h3>Students</h3>
 	<p>A diverse team of graduate and undergraduate students help support the day-to-day operations of BESI-C.</p>
-	{#<p>A diverse team of post-doctoral fellows, graduate and undergraduate students help support the day-to-day operations of BESI-C.</p>
-	<h4>Post-Doctoral Fellows</h4>#}
+	{% comment %}<p>A diverse team of post-doctoral fellows, graduate and undergraduate students help support the day-to-day operations of BESI-C.</p>
+	<h4>Post-Doctoral Fellows</h4>{% endcomment %}
 
 	<h4>Graduate</h4>
 	<div class="person" >
@@ -216,4 +223,7 @@
 		<li>American Cancer Society, Pilot and Exploratory Projects in Palliative Care, PEP-10-042-01-PCSM</li>
 		<li>University of Virginia Engineering in Medicine Seed Pilot Program</li>
 	</ul>
-{% endblock %}
+</div>
+
+</body>
+</html>

@@ -1,7 +1,14 @@
-{% include 'base' %}
-{% block title %}News | BESI-C{% endblock %}
+---
+title: News
+---
 
-{% block content %}
+<!DOCTYPE html><html lang="en-US">
+{% include 'head' %}
+
+<body>
+{% include 'navbar' %}
+
+<div id="content">
 	<h2 class="u-center">BESI-C In The News</h2>
 
 	<div class="article-grid">
@@ -35,4 +42,7 @@
 			<p>UVA Studies Pain to Help Patients and Caregivers</p>
 		</a>
 	</div>
-{% endblock %}
+</div>
+
+</body>
+</html>

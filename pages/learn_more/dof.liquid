@@ -1,25 +1,30 @@
-{% include 'base' %}
-{% block title %}Findings | BESI-C{% endblock %}
+---
+title: Findings
+---
 
-{% block head %}
-	<script>
-		function Accordion(id) {
-			var elem = document.getElementById(id);
-			var head = document.getElementById(id + "_header");
-			if (elem.style.display == "inline") {
-				//console.log("some");
-				elem.style.display = "none";
-				head.innerHTML = head.innerHTML.replace("fas fa-angle-down","fas fa-angle-right")
-			} else {
-				//console.log("none");
-				elem.style.display = "inline";
-				head.innerHTML = head.innerHTML.replace("fas fa-angle-right", "fas fa-angle-down")
-			}
+<!DOCTYPE html><html lang="en-US">
+{% include 'head' %}
+
+<script>
+	function Accordion(id) {
+		var elem = document.getElementById(id);
+		var head = document.getElementById(id + "_header");
+		if (elem.style.display == "inline") {
+			//console.log("some");
+			elem.style.display = "none";
+			head.innerHTML = head.innerHTML.replace("fas fa-angle-down","fas fa-angle-right")
+		} else {
+			//console.log("none");
+			elem.style.display = "inline";
+			head.innerHTML = head.innerHTML.replace("fas fa-angle-right", "fas fa-angle-down")
 		}
-	</script>
-{% endblock %}
+	}
+</script>
 
-{% block content %}
+<body>
+{% include 'navbar' %}
+
+<div id="content">
 	<h2>Dissemination of Findings</h2>
 
 	<div class="collapse-header" id="publications_header" onclick="Accordion('publications')">
@@ -73,4 +78,7 @@
 		<a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8877908&isnumber=8877893"><h5>Agitation Monitoring and Prevention System for Dementia Caregiver Empowerment</h5></a>
 		<p>N. Homdee, R. Alam, J.A. Hayes, T. Hamid, J. Park, S. Wolfe, H. Goins, N. Fyffe, T. Newbold, T. Smith-Jackson, A. Bankole, M.S. Anderson, J. Lach, "Agitation Monitoring and Prevention System for Dementia Caregiver Empowerment," in Computer, vol. 52, no. 11, pp. 30-39, Nov. 2019doi: 10.1109/MC.2019.2933192</p>
 	</div>
-{% endblock %}
+</div>
+
+</body>
+</html>
