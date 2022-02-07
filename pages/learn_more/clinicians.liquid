@@ -1,40 +1,7 @@
-<!DOCTYPE html><html lang="en-US">
-	<head>
-		<title>For Clinicians | BESI-C</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width; initial-scale=1.0;">
-		<link rel="icon" href="/images/favicon.png">
-		<link rel="stylesheet" type="text/css" href="/style/main.css">
+{% include 'base' %}
+{% block title %}For Clinicians | BESI-C{% endblock %}
 
-		<script src="https://kit.fontawesome.com/e54c1740d9.js" crossorigin="anonymous"></script>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-155032258-1"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-
-			gtag('config', 'UA-155032258-1');
-		</script>
-
-		
-	</head>
-	<body>
-		<div id="navbar">
-			<a href="/">
-				<img src="/images/logo.png" alt="Logo"/>
-			</a>
-			<nav id="nav-links">
-				<a href="/" class="mobile-hide">Home</a>
-				<a href="/about_us">About Us</a>
-				<a href="/contact_us">Contact</a>
-				<a href="/news">News</a>
-				<a href="/learn_more">Learn More</a>
-			</nav>
-		</div>
-		
-		<div id="content">
-			
+{% block content %}
 	<h2>For Clinicians<h2>
 
 	<h4>Questions or Concerns?</h4>
@@ -84,7 +51,4 @@
 
 	<h4>Survey Links</h4>
 	<p><i>Coming Soon</i></p>
-
-		</div>
-	</body>
-</html>
+{% endblock %}

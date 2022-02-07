@@ -1,4 +1,0 @@
-toml==0.10
-libsass==0.20
-jinja2==3.0
-flask==2.0
