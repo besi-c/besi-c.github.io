@@ -2,41 +2,25 @@
 GitHub Pages Site for BESI-C
 
 
-## Setup Development Environmental
-
-	python -m venv env
-	source env/bin/activate
-	python -m pip install -r requirements.txt
-
-
 ## Build Site
-This will use files in `templates/` to update all other `.html` files, and `style/source.scss` to update `style/main.css`. This will overwrite changes to updated files.
+This will use files in `pages/` and `includes/` to update files in `docs`.
 
-	python build.py
-
-If you would like files to be continually updated as source files change use:
-
-	python build.py watch
+	npm run build
 
 
 ## Run Development Server
-This will make the current version of the site available at [localhost:5000](http://localhost:5000).
+This will make the current version of the site available at [localhost:8080](http://localhost:8080). This will update each time a file is written.
 
-	flask run
+	npm start
 
 
-## Files
-- `images/` static image files used by site
-- `files/` static files used by site
-- `learn_more/*.html` generated site files, created with `build.py`
-- `style/`
-	- `source.scss` [sass](https://sass-lang.com) style source, used by `build.py`
-	- `main.css` generated style file, created with `build.py`
-- `templates/*.html` [jinja2](https://jinja.palletsprojects.com/en/3.0.x/templates) source templates for pages, used by `build.py`
-- `.layout.toml` file to define which templates are used to create pages
-- `app.py` python script to run local server
-- `build.py` python script to create site from templates
-- `CNAME` file for [github pages](https://pages.github.com) to set domain name
-- `README.md` this file
-- `requirements.txt` python requirements
-- `*.html` generated site files, created with `build.py`
+## Directories & Files
+- `docs/` output directory of compiled site (the name is determined by [github pages](https://pages.github.com))
+	- `files/` static files used in site
+	- `fonts/` static font files used in the site, contains Aldrich font
+	- `images/` static images used in the site
+	- `style/` directory with CSS, general.css is generated from `includes/style.scss`
+- `includes/` files to use in page generation
+- `pages/` templates for each pages
+- `.eleventy.js` eleventy config file
+- `CNAME` file for [github pages](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site) to set domain name
