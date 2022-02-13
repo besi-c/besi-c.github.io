@@ -20,7 +20,8 @@ This will make the current version of the site available at [localhost:8080](htt
 	- `fonts/` static font files used in the site, contains Aldrich font
 	- `images/` static images used in the site
 	- `style/` directory with CSS, general.css is generated from `includes/style.scss`
+	- `CNAME` file for [github pages](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site) to set domain name
+	- `*.html` web pages generated from `pages/`
 - `includes/` files to use in page generation
 - `pages/` templates for each pages
 - `.eleventy.js` eleventy config file
-- `CNAME` file for [github pages](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site) to set domain name
