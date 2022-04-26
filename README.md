@@ -32,3 +32,8 @@ or
 - `includes/` files to use in page generation
 - `pages/` templates for each page
 - `.eleventy.js` eleventy config file
+
+
+## Useful Links
+[GitHub Pages Docs](https://docs.github.com/en/pages)
+[Eleventy Docs](https://www.11ty.dev/docs/)
