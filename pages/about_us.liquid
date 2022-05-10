@@ -2,238 +2,315 @@
 title: About Us
 ---
 
-<!DOCTYPE html><html lang="en-US">
-{% include 'head' %}
+<!DOCTYPE html>
+<html lang="en-US">
+  {% include 'head' %}
 
-<body>
-{% include 'navbar' %}
+  <body>
+    {% include 'navbar' %}
 
-<div id="content">
-	<img src="/images/about.jpg" alt="Team Photo" class="page-img m-hide"/>
-	<img src="/images/about_wide.jpg" alt="Team Photo for Mobile" class="page-img m-show"/>
+    <div id="content">
+      <img src="/images/about.jpg" alt="Team Photo" class="page-img m-hide" />
+      <img
+        src="/images/about_wide.jpg"
+        alt="Team Photo for Mobile"
+        class="page-img m-show"
+      />
 
-	<h2>{{ title }}</h2>
-	<p>BESI-C brings together the creative, problem-solving spirit of both engineering and nursing, and represents a truly interdisciplinary research endeavor supported by a dedicated team of faculty, students and collaborators.</p>
+      <h2>{{ title }}</h2>
+      <p>
+        BESI-C brings together the creative, problem-solving spirit of both
+        engineering and nursing, and represents a truly interdisciplinary
+        research endeavor supported by a dedicated team of faculty, students and
+        collaborators.
+      </p>
 
+      <h3>Lead Faculty</h3>
+      <p>
+        The BESI-C project combines John Lach's pioneering work in developing
+        sensor platforms and data analytics to improve health outcomes, along
+        with Virginia LeBaron's clinical and research experience as an oncology
+        and palliative care nurse.
+      </p>
+      <a href="https://www.seas.gwu.edu/john-lach"
+        ><div class="person">
+          <img src="/images/people/john_lach.jpg" />
+          <h5>John Lach</h5>
+          <p>
+            UVA School of Engineering and Applied Sciences<br />GW School of
+            Engineering and Applied Sciences
+          </p>
+        </div></a
+      >
+      <a href="https://www.nursing.virginia.edu/people/vtl6k/"
+        ><div class="person">
+          <img src="/images/people/virginia_lebaron.jpg" />
+          <h5>Virginia LeBaron</h5>
+          <p>UVA School of Nursing</p>
+        </div></a
+      >
 
-	<h3>Lead Faculty</h3>
-	<p>The BESI-C project combines John Lach's pioneering work in developing sensor platforms and data analytics to improve health outcomes, along with Virginia LeBaron's clinical and research experience as an oncology and palliative care nurse.</p>
-	<a href="https://www.seas.gwu.edu/john-lach"><div class="person">
-		<img src="/images/people/john_lach.jpg"/>
-		<h5>John Lach</h5>
-		<p>UVA School of Engineering and Applied Sciences<br>GW School of Engineering and Applied Sciences</p>
-	</div></a>
-	<a href="https://www.nursing.virginia.edu/people/vtl6k/"><div class="person">
-		<img src="/images/people/virginia_lebaron.jpg"/>
-		<h5>Virginia LeBaron</h5>
-		<p>UVA School of Nursing</p>
-	</div></a>
+      <h3>Students</h3>
+      <p>
+        A diverse team of graduate and undergraduate students help support the
+        day-to-day operations of BESI-C.
+      </p>
+      {% comment %}
+      <p>
+        A diverse team of post-doctoral fellows, graduate and undergraduate
+        students help support the day-to-day operations of BESI-C.
+      </p>
+      <h4>Post-Doctoral Fellows</h4>
+      {% endcomment %}
 
+      <h4>Graduate</h4>
+      <div class="person">
+        <img src="/images/people/rachel_bennett.jpg" />
+        <h5>Rachel Bennett</h5>
+        <p>UVA School of Nursing</p>
+      </div>
+      <div class="person">
+        <img src="/images/people/leah_bianchi.jpg" />
+        <h5>Leah Bianchi</h5>
+        <p>UVA School of Nursing</p>
+      </div>
 
-	<h3>Students</h3>
-	<p>A diverse team of graduate and undergraduate students help support the day-to-day operations of BESI-C.</p>
-	{% comment %}<p>A diverse team of post-doctoral fellows, graduate and undergraduate students help support the day-to-day operations of BESI-C.</p>
-	<h4>Post-Doctoral Fellows</h4>{% endcomment %}
+      <h4>Undergraduate</h4>
 
-	<h4>Graduate</h4>
-	<div class="person" >
-		<img src="/images/people/rachel_bennett.jpg"/>
-		<h5>Rachel Bennett</h5>
-		<p>UVA School of Nursing</p>
-	</div>
-	<div class="person">
-		<img src="/images/people/leah_bianchi.jpg"/>
-		<h5>Leah Bianchi</h5>
-		<p>UVA School of Nursing</p>
-	</div>
+      <div class="person">
+        <img src="/images/people/caroline_bell.jpg" />
+        <h5>Caroline Bell</h5>
+        <p>UVA School of Engineering and Applied Sciences</p>
+      </div>
 
-	<h4>Undergraduate</h4>
-	<div class="person">
-		<img src="/images/people/sarah_alverson.jpg"/>
-		<h5>Sarah Alverson</h5>
-		<p>UVA College of Arts and Sciences</p>
-	</div>
-	<a href="https://pennbauman.com"><div class="person">
-		<img src="/images/people/penn_bauman.jpg">
-		<h5>Penn Bauman</h5>
-		<p>UVA School of Engineering and Applied Sciences</p>
-	</div></a>
-	<div class="person">
-		<img src="/images/people/caroline_bell.jpg"/>
-		<h5>Caroline Bell</h5>
-		<p>UVA School of Engineering and Applied Sciences</p>
-	</div>
-	<div class="person">
-		<img src="/images/people/tuyet_chuong.jpg"/>
-		<h5>Tuyet Chuong</h5>
-		<p>UVA School of Nursing</p>
-	</div>
-	<a href="https://www.linkedin.com/in/yudel-martinez-41256b176/"><div class="person">
-		<img src="/images/people/yudel_martinez.jpg"/>
-		<h5>Yudel Martinez</h5>
-		<p>UVA School of Engineering and Applied Sciences</p>
-	</div></a>
-	<div class="person">
-		<img src="/images/people/stacy_meng.jpg"/>
-		<h5>Stacy Meng</h5>
-		<p>UVA School of Engineering and Applied Sciences</p>
-	</div>
-	<a href="https://www.linkedin.com/in/hannah-moody-a39238209/"><div class="person">
-		<img src="/images/people/hannah_moody.jpg"/>
-		<h5>Hannah Moody</h5>
-		<p>UVA School of Nursing</p>
-	</div></a>
-	<div class="person">
-		<img src="/images/people/kimberly_novak.jpg"/>
-		<h5>Kimberly Novak</h5>
-		<p>UVA School of Nursing</p>
-	</div>
-	<a href="https://www.linkedin.com/in/emmanuel-ogunjirin-777303178/"><div class="person">
-		<img src="/images/people/emmanuel_ogunjirin.jpg"/>
-		<h5>Emmanuel Ogunjirin</h5>
-		<p>UVA School of Engineering and Applied Sciences</p>
-	</div></a>
-	<a href="https://www.linkedin.com/in/nyota-patel-232239209/"><div class="person">
-		<img src="/images/people/nyota_patel.jpg"/>
-		<h5>Nyota Patel</h5>
-		<p>UVA School of Engineering and Applied Sciences</p>
-	</div></a>
-	<div class="person">
-		<img src="/images/people/caleb_williams.jpg"/>
-		<h5>Caleb Williams</h5>
-		<p>UVA School of Engineering and Applied Sciences</p>
-	</div>
-	<div class="person">
-		<img src="/images/people/no_photo.jpg"/>
-		<h5>Kiki Wong</h5>
-		<p>UVA School of Engineering and Applied Sciences</p>
-	</div>
+      <div class="person">
+        <img src="/images/people/stacy_meng.jpg" />
+        <h5>Stacy Meng</h5>
+        <p>UVA School of Engineering and Applied Sciences</p>
+      </div>
+      <a href="https://www.linkedin.com/in/hannah-moody-a39238209/"
+        ><div class="person">
+          <img src="/images/people/hannah_moody.jpg" />
+          <h5>Hannah Moody</h5>
+          <p>UVA School of Nursing</p>
+        </div></a
+      >
 
+      <a href="https://www.linkedin.com/in/nyota-patel-232239209/"
+        ><div class="person">
+          <img src="/images/people/nyota_patel.jpg" />
+          <h5>Nyota Patel</h5>
+          <p>UVA School of Engineering and Applied Sciences</p>
+        </div></a
+      >
+      <div class="person">
+        <img src="/images/people/caleb_williams.jpg" />
+        <h5>Caleb Williams</h5>
+        <p>UVA School of Engineering and Applied Sciences</p>
+      </div>
+      <div class="person">
+        <img src="/images/people/no_photo.jpg" />
+        <h5>Kiki Wong</h5>
+        <p>UVA School of Engineering and Applied Sciences</p>
+      </div>
 
-	<h3>Collaborators</h3>
-	<p>Key partners that support the work of BESI-C.</p>
-	<div class="person">
-		<img src="/images/people/susie_beck.jpg"/>
-		<h5>Susie Beck</h5>
-		<p>University of Utah College of Nursing, Professor Emeritus
-			<br>Consultant</p>
-	</div>
-	<a href="https://uvahealth.com/findadoctor/profile/leslie-j-blackhall"><div class="person">
-		<img src="/images/people/leslie_blackhall.jpg"/>
-		<h5>Leslie Blackhall</h5>
-		<p>UVA School of Medicine</p>
-	</div></a>
-	<div class="person">
-		<img src="/images/people/patti_dewberry.jpg"/>
-		<h5>Patti Dewberry</h5>
-		<p>Hospice of the Piedmont</p>
-	</div>
-	<a href="https://devhub.virginia.edu/"><div class="person">
-		<img src="/images/people/nadim_el-jaroudi.jpg"/>
-		<h5>Nadim El-Jaroudi</h5>
-		<p>UVA Dev Hub</p>
-	</div></a>
-	<a href="https://www.nursing.virginia.edu/people/raj9c/"><div class="person">
-		<img src="/images/people/randy_jones.jpg"/>
-		<h5>Randy Jones</h5>
-		<p>UVA School of Nursing</p>
-	</div></a>
-	<div class="person">
-		<img src="/images/people/bryan_lewis.jpg"/>
-		<h5>Bryan Lewis</h5>
-		<p>UVA Biocomplexity Institute</p>
-	</div>
-	<div class="person">
-		<img src="/images/people/sarah_ratcliffe.jpg"/>
-		<h5>Sarah Ratcliffe</h5>
-		<p>UVA School of Medicine</p>
-	</div>
-	<div class="person">
-		<img src="/images/people/danielle_wallace.jpg"/>
-		<h5>Danielle Wallace</h5>
-		<p>Hospice of the Piedmont</p>
-	</div>
+      <h3>Collaborators</h3>
+      <p>Key partners that support the work of BESI-C.</p>
+      <div class="person">
+        <img src="/images/people/susie_beck.jpg" />
+        <h5>Susie Beck</h5>
+        <p>
+          University of Utah College of Nursing, Professor Emeritus
+          <br />Consultant
+        </p>
+      </div>
+      <a href="https://uvahealth.com/findadoctor/profile/leslie-j-blackhall"
+        ><div class="person">
+          <img src="/images/people/leslie_blackhall.jpg" />
+          <h5>Leslie Blackhall</h5>
+          <p>UVA School of Medicine</p>
+        </div></a
+      >
+      <div class="person">
+        <img src="/images/people/patti_dewberry.jpg" />
+        <h5>Patti Dewberry</h5>
+        <p>Hospice of the Piedmont</p>
+      </div>
+      <a href="https://devhub.virginia.edu/"
+        ><div class="person">
+          <img src="/images/people/nadim_el-jaroudi.jpg" />
+          <h5>Nadim El-Jaroudi</h5>
+          <p>UVA Dev Hub</p>
+        </div></a
+      >
 
+      <div class="person">
+        <img src="/images/people/nutta_homdee.jpg" />
+        <h5>Nutta Homdee</h5>
+        <p>Mahidol University, Faculty of Medical Technology</p>
+      </div>
 
-	<h3>Clinical Research Coordinator</h3>
-	<div class="person">
-		<img src="/images/people/penny_amos.jpg"/>
-		<h5>Penny Amos</h5>
-		<p>UVA School of Nursing</p>
-	</div>
+      <a href="https://www.nursing.virginia.edu/people/raj9c/"
+        ><div class="person">
+          <img src="/images/people/randy_jones.jpg" />
+          <h5>Randy Jones</h5>
+          <p>UVA School of Nursing</p>
+        </div></a
+      >
+      <div class="person">
+        <img src="/images/people/bryan_lewis.jpg" />
+        <h5>Bryan Lewis</h5>
+        <p>UVA Biocomplexity Institute</p>
+      </div>
+      <div class="person">
+        <img src="/images/people/sarah_ratcliffe.jpg" />
+        <h5>Sarah Ratcliffe</h5>
+        <p>UVA School of Medicine</p>
+      </div>
+      <div class="person">
+        <img src="/images/people/danielle_wallace.jpg" />
+        <h5>Danielle Wallace</h5>
+        <p>Hospice of the Piedmont</p>
+      </div>
 
+      <h3>Clinical Research Coordinator</h3>
+      <div class="person">
+        <img src="/images/people/penny_amos.jpg" />
+        <h5>Penny Amos</h5>
+        <p>UVA School of Nursing</p>
+      </div>
 
-	<h3>Project Management</h3>
-	<div class="person">
-		<img src="/images/people/amber_steen.jpg"/>
-		<h5>Amber Steen</h5>
-		<p>UVA Center for Global Health Equity</p>
-	</div>
+      <h3>Project Management</h3>
+      <div class="person">
+        <img src="/images/people/amber_steen.jpg" />
+        <h5>Amber Steen</h5>
+        <p>UVA Center for Global Health Equity</p>
+      </div>
 
+      <h3>Alumni</h3>
 
-	<h3>Alumni</h3>
-	<a href="http://www.people.virginia.edu/~ma4ch/"><div class="person">
-		<img src="/images/people/ridwan_alam.jpg"/>
-		<h5>Ridwan Alam </h5>
-		<p>UVA School of Engineering and Applied Sciences</p>
-	</div></a>
-	<div class="person">
-		<img src="/images/people/katherine_gordon.jpg"/>
-		<h5>Katherine Gordon</h5>
-		<p>UVA School of Nursing</p>
-	</div>
-	<a href="https://www.linkedin.com/in/james-hayes-5330bb71/"><div class="person" >
-		<img src="/images/people/james_hayes.jpg"/>
-		<h5>James Hayes</h5>
-		<p>UVA School of Engineering and Applied Sciences</p>
-	</div></a>
-	<div class="person" >
-		<img src="/images/people/nutta_homdee.jpg"/>
-		<h5>Nutta Homdee</h5>
-		<p>UVA School of Engineering and Applied Sciences</p>
-	</div>
-	<div class="person">
-		<img src="/images/people/kate_lichti.jpg"/>
-		<h5>Kate Lichti</h5>
-		<p>UVA School of Nursing</p>
-	</div>
-	<div class="person">
-		<img src="/images/people/sahar_mohammadi.jpg"/>
-		<h5>Sahar Mohammadi</h5>
-		<p>UVA School of Nursing</p>
-	</div>
-	<a href="https://www.linkedin.com/in/davon-okoro-b1959719b/"><div class="person">
-		<img src="/images/people/davon_okoro.jpg"/>
-		<h5>Davon Okoro</h5>
-		<p>UVA School of Nursing</p>
-	</div></a>
-	<a href="https://www.linkedin.com/in/johnjp"><div class="person">
-		<img src="/images/people/john_park.jpg"/>
-		<h5>John Park</h5>
-		<p>UVA School of Engineering and Applied Sciences</p>
-	</div></a>
-	<div class="person">
-		<img src="/images/people/tanya_thomas.jpg"/>
-		<h5>Tanya Thomas</h5>
-		<p>UVA School of Nursing</p>
-	</div>
-	<a href="https://www.linkedin.com/in/seth-vandebraak/"><div class="person">
-		<img src="/images/people/seth_vanderbraak.jpg"/>
-		<h5>Seth Vanderbraak</h5>
-		<p>UVA School of Engineering and Applied Sciences</p>
-	</div></a>
+      <a href="https://www.linkedin.com/in/ridwan-alam/"
+        ><div class="person">
+          <img src="/images/people/ridwan_alam.jpg" />
+          <h5>Ridwan Alam</h5>
+          <p>
+            Research Fellow, MGH <br />
+            Visiting Scientist, MIT
+          </p>
+        </div></a
+      >
 
+      <div class="person">
+        <img src="/images/people/sarah_alverson.jpg" />
+        <h5>Sarah Alverson</h5>
+        <p>UVA College of Arts and Sciences</p>
+      </div>
 
-	<h3>Sponsors</h3>
-	<ul>
-		<li>National Institutes of Health, National Institute of Nursing Research, R01NR019639-01</li>
-	</ul>
-	<h5>Past Sponsors</h5>
-	<ul>
-		<li>American Cancer Society, Pilot and Exploratory Projects in Palliative Care, PEP-10-042-01-PCSM</li>
-		<li>University of Virginia Engineering in Medicine Seed Pilot Program</li>
-	</ul>
-</div>
+      <a href="https://pennbauman.com"
+        ><div class="person">
+          <img src="/images/people/penn_bauman.jpg" />
+          <h5>Penn Bauman</h5>
+          <p>UVA School of Engineering and Applied Sciences</p>
+        </div></a
+      >
 
-</body>
+      <div class="person">
+        <img src="/images/people/tuyet_chuong.jpg" />
+        <h5>Tuyet Chuong</h5>
+        <p>UVA School of Nursing</p>
+      </div>
+      <div class="person">
+        <img src="/images/people/katherine_gordon.jpg" />
+        <h5>Katherine Gordon</h5>
+        <p>UVA School of Nursing</p>
+      </div>
+
+      <a href="https://www.linkedin.com/in/james-hayes-5330bb71/"
+        ><div class="person">
+          <img src="/images/people/james_hayes.jpg" />
+          <h5>James Hayes</h5>
+          <p>UVA School of Engineering and Applied Sciences</p>
+        </div></a
+      >
+
+      <div class="person">
+        <img src="/images/people/kate_lichti.jpg" />
+        <h5>Kate Lichti</h5>
+        <p>UVA School of Nursing</p>
+      </div>
+
+      <a href="https://www.linkedin.com/in/yudel-martinez-41256b176/"
+        ><div class="person">
+          <img src="/images/people/yudel_martinez.jpg" />
+          <h5>Yudel Martinez</h5>
+          <p>UVA School of Engineering and Applied Sciences</p>
+        </div></a
+      >
+
+      <div class="person">
+        <img src="/images/people/sahar_mohammadi.jpg" />
+        <h5>Sahar Mohammadi</h5>
+        <p>UVA School of Nursing</p>
+      </div>
+      <a href="https://www.linkedin.com/in/davon-okoro-b1959719b/"
+        ><div class="person">
+          <img src="/images/people/davon_okoro.jpg" />
+          <h5>Davon Okoro</h5>
+          <p>UVA School of Nursing</p>
+        </div></a
+      >
+
+      <div class="person">
+        <img src="/images/people/kimberly_novak.jpg" />
+        <h5>Kimberly Novak</h5>
+        <p>UVA School of Nursing</p>
+      </div>
+
+      <a href="https://www.linkedin.com/in/emmanuel-ogunjirin-777303178/"
+        ><div class="person">
+          <img src="/images/people/emmanuel_ogunjirin.jpg" />
+          <h5>Emmanuel Ogunjirin</h5>
+          <p>UVA School of Engineering and Applied Sciences</p>
+        </div></a
+      >
+
+      <a href="https://www.linkedin.com/in/johnjp"
+        ><div class="person">
+          <img src="/images/people/john_park.jpg" />
+          <h5>John Park</h5>
+          <p>UVA School of Engineering and Applied Sciences</p>
+        </div></a
+      >
+      <div class="person">
+        <img src="/images/people/tanya_thomas.jpg" />
+        <h5>Tanya Thomas</h5>
+        <p>UVA School of Nursing</p>
+      </div>
+      <a href="https://www.linkedin.com/in/seth-vandebraak/"
+        ><div class="person">
+          <img src="/images/people/seth_vanderbraak.jpg" />
+          <h5>Seth Vanderbraak</h5>
+          <p>UVA School of Engineering and Applied Sciences</p>
+        </div></a
+      >
+
+      <h3>Sponsors</h3>
+      <ul>
+        <li>
+          National Institutes of Health, National Institute of Nursing Research,
+          R01NR019639-01
+        </li>
+      </ul>
+      <h5>Past Sponsors</h5>
+      <ul>
+        <li>
+          American Cancer Society, Pilot and Exploratory Projects in Palliative
+          Care, PEP-10-042-01-PCSM
+        </li>
+        <li>
+          University of Virginia Engineering in Medicine Seed Pilot Program
+        </li>
+      </ul>
+    </div>
+  </body>
 </html>
