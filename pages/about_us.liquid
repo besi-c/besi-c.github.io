@@ -1,13 +1,43 @@
----
-title: About Us
----
 
 <!DOCTYPE html>
 <html lang="en-US">
-  {% include 'head' %}
+  <head>
+	
+		<title>About Us | BESI-C</title>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0;">
+	<link rel="icon" href="/images/favicon.png">
+	<link rel="stylesheet" type="text/css" href="/style/general.css">
+	
+
+	<script src="https://kit.fontawesome.com/e54c1740d9.js" crossorigin="anonymous"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-155032258-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-155032258-1');
+	</script>
+</head>
+
 
   <body>
-    {% include 'navbar' %}
+    <div id="navbar">
+	<a href="/">
+		<img src="/images/logo.png" alt="Logo"/>
+	</a>
+	<nav id="nav-links">
+		<a href="/" class="mobile-hide">Home</a>
+		<a href="/about_us">About Us</a>
+		<a href="/contact_us">Contact</a>
+		<a href="/news">News</a>
+		<a href="/learn_more">Learn More</a>
+	</nav>
+</div>
+
 
     <div id="content">
       <img src="/images/about.jpg" alt="Team Photo" class="page-img m-hide" />
@@ -17,7 +47,7 @@ title: About Us
         class="page-img m-show"
       />
 
-      <h2>{{ title }}</h2>
+      <h2>About Us</h2>
       <p>
         BESI-C brings together the creative, problem-solving spirit of both
         engineering and nursing, and represents a truly interdisciplinary
@@ -105,10 +135,18 @@ title: About Us
         <img src="/images/people/amber_steen.jpg" />
         <h5>Amber Steen</h5>
         <p>UVA Center for Global Health Equity</p>
+
       </div>
 
       <h3>Key Collaborators</h3>
       <p>Key partners that support the work of BESI-C.</p>
+
+      <div class="person">
+        <img src="/images/people/will_ashe.jpg"/>
+        <h5> Will Ashe </h5>
+        <p>UVA Center for Advanced Medical Analytics</p>
+      </div>
+
       <div class="person">
         <img src="/images/people/susie_beck.jpg" />
         <h5>Susie Beck</h5>
@@ -118,11 +156,6 @@ title: About Us
         </p>
       </div>
 
-      <div class="person">
-        <img src="/images/people/will_ashe.jpg"/>
-        <h5> Will Ashe </h5>
-        <p>UVA Center for Advanced Medical Analytics</p>
-      </div>
 
     <div class="person">
       <img src="/images/people/natalie_crimp.JPG" /> 
@@ -150,6 +183,13 @@ title: About Us
       ><div class="person">
         <img src="/images/people/mina _ostovari.jpeg" />
         <h5>Mina Ostovari</h5>
+        <p>UVA School of Nursing</p>
+      </div></a>
+
+      <a href=""
+      ><div class="person">
+        <img src="/images/people/victoria_petermann.jpg" />
+        <h5>Victoria Petermann</h5>
         <p>UVA School of Nursing</p>
       </div></a>
 
@@ -190,13 +230,7 @@ title: About Us
         <p>UVA School of Engineering and Applied Science</p>
       </div>
 
-      <a href="https://www.linkedin.com/in/nyota-patel-232239209/"
-        ><div class="person">
-          <img src="/images/people/nyota_patel.jpg" />
-          <h5>Nyota Patel</h5>
-          <p>UVA School of Engineering and Applied Science</p>
-        </div></a
-      >
+      
 
       <a href="https://www.linkedin.com/in/yeabsira-sahlu-b57600258/"
       ><div class="person">
@@ -278,7 +312,7 @@ title: About Us
       ><div class="person">
         <img src="/images/people/yudel_martinez.jpg" />
         <h5>Yudel Martinez</h5>
-        <p>Consultant</p>
+        <p>UVA School of Engineering and Applied Science</p>
       </div></a>
 
       <div class="person">
@@ -295,6 +329,13 @@ title: About Us
         </div></a
       >
 
+      <div class="person">
+        <img src="/images/people/kimberly_novak.jpg" />
+        <h5>Kimberly Novak</h5>
+        <p>UVA School of Nursing</p>
+      </div
+
+
       <a href="https://www.linkedin.com/in/davon-okoro-b1959719b/"
         ><div class="person">
           <img src="/images/people/davon_okoro.jpg" />
@@ -303,13 +344,6 @@ title: About Us
         </div></a
       >
 
-      <div class="person">
-        <img src="/images/people/kimberly_novak.jpg" />
-        <h5>Kimberly Novak</h5>
-        <p>UVA School of Nursing</p>
-      </div
-
-
       <a href="https://www.linkedin.com/in/johnjp"
         ><div class="person">
           <img src="/images/people/john_park.jpg" />
@@ -317,6 +351,17 @@ title: About Us
           <p>UVA School of Engineering and Applied Science</p>
         </div></a
       >
+
+
+      <a href="https://www.linkedin.com/in/nyota-patel-232239209/"
+        ><div class="person">
+          <img src="/images/people/nyota_patel.jpg" />
+          <h5>Nyota Patel</h5>
+          <p>UVA School of Engineering and Applied Science</p>
+        </div></a
+      >
+
+      
       <div class="person">
         <img src="/images/people/tanya_thomas.jpg" />
         <h5>Tanya Thomas</h5>
@@ -346,7 +391,7 @@ title: About Us
       <ul>
         <li>
           National Institutes of Health, National Institute of Nursing Research,
-          R01NR019639-01
+          R01NR019639
         </li>
       </ul>
       <h5>Past Sponsors</h5>
